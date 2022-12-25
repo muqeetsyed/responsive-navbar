@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.container main{
+    margin-top: 20vh;
+    text-align: center;
+    font-weight: 900;
+    color: blue;
+}
+
+.container nav .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background-color: antiquewhite;
+}
+
+.container nav .navbar .logo{
+    color: rgb(85, 15, 151);
+    font-weight: 700;
+}
+
+span{
+    color: brown;
+}
+
+nav .navbar .links ul li{
+    display: inline-block;
+}
+
+nav .navbar .links ul li{
+   list-style-type:none; 
+  
+   padding: 10px 10px;
+}
+
+nav .navbar ul li a{
+    display: block;
+}
+
+nav .navbar ul li a{
+    color: rgb(3, 71, 73);
+    text-decoration: none;
+    font-weight: bold;
+    transition: .4s;
+}
+
+nav .navbar ul li a:hover{
+    color: blue;
+}
+
+nav .navbar .toggle input[type="button"]{
+    border: none;
+    background: #a4d5fd;
+    color: rgb(146, 64, 64);
+    padding: 10px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .9s;
+}
+
+.toggle  input[type="button"]:hover{
+    transform: scale(1.2);
+}
+
+.toggle .navbar-toggle{
+        display:none;
+}
+
+
+
+@media screen and (max-device-width: 640px) {
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+
+    .toggle .navbar-toggle{
+        display: block ;
+       
+    }
+
+     input[type="button"]{
+        display:none;
+    }
+
+    .links{
+        height: 0;
+       position: absolute;
+       top: 90px;
+       left: 0;
+       right: 0;
+       width: 100vw;
+       background: #a4d5fd;
+       transition: 0.9s;
+        overflow: hidden;
+    }
+
+    .links.active{
+        height: 200px;
+        
+    }
+
+    .links ul li{
+       display: block !important;
+       width: fit-content;
+       margin: 10px auto 0 auto;
+       transition: 0.8s;
+       opacity: 1;
+    }
+
+
+
+    
+  }
+   

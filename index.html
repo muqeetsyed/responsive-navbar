@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3 class="logo">Simple <span>Navbar</span></h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <!-- <li>Contact</li> -->
+                    </ul>
+                </div>
+                   
+                <div class="toggle">
+                    <h3 class="navbar-toggle">
+                        <img src="./hamburger.svg">
+                    </h3>
+                     <input type="button" value="Get Started"/>
+                </div>
+                
+             </div>
+        </nav>
+        
+        <main>
+            Hello Geeks!
+        </main>
+    </div>
+    <script>
+  hamburger = document.querySelector(".navbar-toggle");
+
+
+  hamburger.onclick = function(){
+  navbar = document.querySelector(".links");
+  navbar.classList.toggle("active");
+  }
+  
+
+
+    </script>
+</body>
+</html>
